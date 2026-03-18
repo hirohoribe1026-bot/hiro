@@ -1,0 +1,26 @@
+# 環境変数
+.env
+
+# Gmail API 認証ファイル（機密情報）
+credentials.json
+token.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# データファイル（ローカル実行時の履歴）
+data/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
