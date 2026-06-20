@@ -1,0 +1,14 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Generated audio
+*.mp3
+*.wav
+*.pcm
+!sample/*.mp3
