@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HIRO ビジネスアカデミー｜才能を“選ばれ続ける継続プログラム”へ</title>
+<meta name="description" content="単発セッション・ヒーリング・鑑定・講座を卒業し、あなたの才能を“選ばれ続ける継続プログラム”へ変える全4回。ミラコレメンバー8名限定。">
+<style>
+  :root{
+    --navy:#1a2238;
+    --gold:#c8a45c;
+    --gold-light:#e2cd97;
+    --cream:#faf7f0;
+    --ink:#2c2c33;
+    --muted:#6b6b76;
+    --line:#e7e0d2;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic",YuGothic,Meiryo,sans-serif;
+    color:var(--ink);
+    background:var(--cream);
+    line-height:1.9;
+    font-size:16px;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  .wrap{max-width:880px;margin:0 auto;padding:0 24px;}
+  .center{text-align:center;}
+  section{padding:72px 0;}
+  h2.sec-title{
+    font-size:1.7rem;
+    text-align:center;
+    letter-spacing:.04em;
+    line-height:1.6;
+    margin-bottom:8px;
+    color:var(--navy);
+    font-weight:700;
+  }
+  .sec-en{
+    display:block;
+    text-align:center;
+    font-size:.72rem;
+    letter-spacing:.3em;
+    color:var(--gold);
+    margin-bottom:44px;
+    text-transform:uppercase;
+  }
+  .marker{
+    background:linear-gradient(transparent 65%,var(--gold-light) 65%);
+    padding:0 .1em;
+  }
+  /* ---------- HERO ---------- */
+  .hero{
+    background:
+      radial-gradient(ellipse at top,rgba(200,164,92,.18),transparent 60%),
+      var(--navy);
+    color:#fff;
+    padding:96px 0 88px;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";
+    position:absolute;inset:0;
+    background:radial-gradient(circle at 80% 20%,rgba(226,205,151,.12),transparent 40%);
+    pointer-events:none;
+  }
+  .hero .wrap{position:relative;z-index:1;}
+  .eyebrow{
+    display:inline-block;
+    border:1px solid var(--gold);
+    color:var(--gold-light);
+    font-size:.72rem;
+    letter-spacing:.28em;
+    padding:7px 18px;
+    border-radius:40px;
+    margin-bottom:30px;
+  }
+  .hero h1{
+    font-size:2.35rem;
+    line-height:1.5;
+    letter-spacing:.03em;
+    font-weight:700;
+    margin-bottom:26px;
+  }
+  .hero h1 .lg{color:var(--gold-light);}
+  .hero .sub{
+    font-size:1.05rem;
+    color:#d8dae3;
+    line-height:2;
+    max-width:620px;
+    margin:0 auto 38px;
+  }
+  .badge-limited{
+    display:inline-block;
+    background:var(--gold);
+    color:var(--navy);
+    font-weight:700;
+    letter-spacing:.08em;
+    padding:10px 26px;
+    border-radius:6px;
+    font-size:.95rem;
+  }
+  /* ---------- BUTTON ---------- */
+  .btn{
+    display:inline-block;
+    background:var(--gold);
+    color:#fff;
+    font-weight:700;
+    text-decoration:none;
+    padding:20px 56px;
+    border-radius:8px;
+    font-size:1.1rem;
+    letter-spacing:.05em;
+    box-shadow:0 10px 24px rgba(200,164,92,.35);
+    transition:transform .2s,box-shadow .2s;
+  }
+  .btn:hover{transform:translateY(-3px);box-shadow:0 16px 30px rgba(200,164,92,.45);}
+  .btn small{display:block;font-size:.72rem;font-weight:400;letter-spacing:.1em;margin-top:4px;opacity:.9;}
+  /* ---------- PROBLEM ---------- */
+  .problem{background:#fff;}
+  .problem-lead{text-align:center;font-size:1.15rem;color:var(--navy);font-weight:600;margin-bottom:36px;}
+  .check-list{max-width:600px;margin:0 auto;}
+  .check-list li{
+    list-style:none;
+    background:var(--cream);
+    border-left:3px solid var(--gold);
+    padding:16px 22px;
+    margin-bottom:14px;
+    border-radius:4px;
+    font-size:1rem;
+    position:relative;
+    padding-left:48px;
+  }
+  .check-list li::before{
+    content:"✓";
+    position:absolute;left:18px;top:16px;
+    color:var(--gold);font-weight:700;
+  }
+  .arrow-down{text-align:center;font-size:2rem;color:var(--gold);margin:34px 0 0;}
+  /* ---------- PROMISE ---------- */
+  .promise{background:var(--navy);color:#fff;text-align:center;}
+  .promise h2{color:#fff;}
+  .promise .sec-en{color:var(--gold-light);}
+  .promise p{font-size:1.1rem;color:#d8dae3;max-width:640px;margin:0 auto;line-height:2.1;}
+  .promise .hl{color:var(--gold-light);font-weight:700;}
+  /* ---------- CURRICULUM ---------- */
+  .curriculum{background:var(--cream);}
+  .flow{
+    text-align:center;
+    color:var(--muted);
+    font-size:.9rem;
+    margin-bottom:48px;
+    line-height:2.4;
+  }
+  .flow b{color:var(--navy);}
+  .flow .step{color:var(--gold);font-weight:700;}
+  .lesson{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:30px 32px;
+    margin-bottom:20px;
+    display:flex;
+    gap:26px;
+    align-items:flex-start;
+    box-shadow:0 4px 14px rgba(26,34,56,.04);
+  }
+  .lesson .no{
+    flex:0 0 auto;
+    width:58px;height:58px;
+    background:var(--navy);
+    color:var(--gold-light);
+    border-radius:50%;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    font-size:.6rem;letter-spacing:.15em;
+  }
+  .lesson .no strong{font-size:1.4rem;line-height:1;color:#fff;}
+  .lesson .body h3{font-size:1.18rem;color:var(--navy);margin-bottom:8px;letter-spacing:.02em;}
+  .lesson .goal{
+    display:inline-block;
+    background:var(--cream);
+    border:1px solid var(--gold-light);
+    color:#8a6d2e;
+    font-size:.85rem;
+    padding:5px 14px;
+    border-radius:30px;
+    font-weight:600;
+  }
+  .lesson .goal b{color:var(--gold);}
+  /* ---------- PRICE ---------- */
+  .price{background:#fff;text-align:center;}
+  .price-card{
+    max-width:560px;
+    margin:0 auto;
+    border:2px solid var(--gold);
+    border-radius:16px;
+    padding:48px 36px;
+    background:linear-gradient(180deg,#fffdf8,#fff);
+    box-shadow:0 16px 40px rgba(200,164,92,.15);
+  }
+  .price-card .tag{
+    display:inline-block;
+    background:var(--navy);
+    color:var(--gold-light);
+    font-size:.85rem;
+    letter-spacing:.12em;
+    padding:8px 22px;
+    border-radius:30px;
+    margin-bottom:24px;
+  }
+  .price-card .name{font-size:1.2rem;color:var(--navy);font-weight:700;margin-bottom:20px;}
+  .price-original{
+    color:var(--muted);
+    font-size:1.05rem;
+    text-decoration:line-through;
+    text-decoration-color:var(--gold);
+  }
+  .price-now{
+    margin:6px 0 4px;
+  }
+  .price-now .yen{font-size:1.3rem;color:var(--navy);vertical-align:.5em;}
+  .price-now .num{font-size:3.6rem;font-weight:800;color:var(--navy);letter-spacing:-.02em;}
+  .price-now .tax{font-size:.9rem;color:var(--muted);}
+  .price-note{color:#b4402f;font-weight:700;margin-top:14px;letter-spacing:.05em;}
+  .price-incl{
+    text-align:left;
+    max-width:380px;
+    margin:30px auto 0;
+    border-top:1px dashed var(--line);
+    padding-top:24px;
+  }
+  .price-incl li{
+    list-style:none;
+    padding-left:28px;position:relative;
+    margin-bottom:10px;font-size:.95rem;
+  }
+  .price-incl li::before{content:"◆";color:var(--gold);position:absolute;left:0;font-size:.7rem;top:.4em;}
+  /* ---------- TARGET ---------- */
+  .target{background:var(--cream);}
+  .target-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:720px;margin:0 auto;}
+  .target-grid .item{
+    background:#fff;border:1px solid var(--line);border-radius:10px;
+    padding:22px 24px;font-size:.97rem;display:flex;gap:12px;align-items:flex-start;
+  }
+  .target-grid .item span{color:var(--gold);font-weight:700;flex:0 0 auto;}
+  /* ---------- FAQ ---------- */
+  .faq{background:#fff;}
+  .faq details{
+    border-bottom:1px solid var(--line);
+    padding:20px 4px;
+  }
+  .faq summary{
+    cursor:pointer;font-weight:600;color:var(--navy);font-size:1.02rem;
+    list-style:none;position:relative;padding-right:30px;
+  }
+  .faq summary::-webkit-details-marker{display:none;}
+  .faq summary::after{content:"＋";position:absolute;right:4px;color:var(--gold);font-weight:700;}
+  .faq details[open] summary::after{content:"−";}
+  .faq p{margin-top:14px;color:var(--muted);font-size:.95rem;}
+  /* ---------- FINAL CTA ---------- */
+  .final{
+    background:radial-gradient(ellipse at top,rgba(200,164,92,.2),transparent 60%),var(--navy);
+    color:#fff;text-align:center;
+  }
+  .final h2{color:#fff;font-size:1.6rem;margin-bottom:18px;}
+  .final p{color:#d8dae3;margin-bottom:14px;}
+  .final .seats{color:var(--gold-light);font-weight:700;letter-spacing:.08em;margin-bottom:34px;display:block;}
+  /* ---------- FOOTER ---------- */
+  footer{background:#12182b;color:#8b91a3;text-align:center;padding:36px 0;font-size:.82rem;letter-spacing:.05em;}
+  /* ---------- RESPONSIVE ---------- */
+  @media(max-width:600px){
+    .hero h1{font-size:1.7rem;}
+    h2.sec-title{font-size:1.35rem;}
+    .lesson{flex-direction:column;gap:14px;padding:24px;}
+    .target-grid{grid-template-columns:1fr;}
+    .price-now .num{font-size:2.8rem;}
+    .btn{padding:18px 36px;width:100%;}
+    section{padding:56px 0;}
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap center">
+    <span class="eyebrow">HIRO BUSINESS ACADEMY</span>
+    <h1>才能を、<span class="lg">“選ばれ続ける継続プログラム”</span>へ。</h1>
+    <p class="sub">
+      単発セッション・ヒーリング・鑑定・講座を卒業しよう。<br>
+      あなたの才能を、お客様に選ばれ続ける<br>
+      継続プログラムへと変える全4回。
+    </p>
+    <span class="badge-limited">ミラコレメンバー 8名限定</span>
+    <div style="margin-top:38px;">
+      <a href="#price" class="btn">詳細を見る・申し込む<small>※8名限定 / 先着順</small></a>
+    </div>
+  </div>
+</header>
+
+<!-- PROBLEM -->
+<section class="problem">
+  <div class="wrap">
+    <span class="sec-en">Are you ...?</span>
+    <h2 class="sec-title">こんな悩み、ありませんか？</h2>
+    <p class="problem-lead">才能も実績もあるのに、収入が「単発」で止まっている。</p>
+    <ul class="check-list">
+      <li>セッションや鑑定が「単発」で終わり、毎月ゼロから集客している</li>
+      <li>良い仕事をしている自信はあるのに、価格を上げられない</li>
+      <li>「売り込む」のが苦手で、セールスになると止まってしまう</li>
+      <li>継続プログラムを作りたいけれど、何をどう組めばいいか分からない</li>
+      <li>自分の商品を、自信を持って「これです」と言えない</li>
+    </ul>
+    <div class="arrow-down">▼</div>
+  </div>
+</section>
+
+<!-- PROMISE -->
+<section class="promise">
+  <div class="wrap">
+    <span class="sec-en">What changes</span>
+    <h2 class="sec-title">このアカデミーが終わるころ、<br>あなたは「自分の商品」を持っている。</h2>
+    <p>
+      4回のゴールは、知識を増やすことではありません。<br>
+      <span class="hl">自分だけの継続プログラム（高単価商品）を1つ完成させ、<br>
+      価格をつけて、自信を持って募集できる状態になる</span>こと。<br><br>
+      売り込まなくても、紹介とリピートで選ばれ続ける。<br>
+      その入口を、この4回でつくります。
+    </p>
+  </div>
+</section>
+
+<!-- CURRICULUM -->
+<section class="curriculum" id="curriculum">
+  <div class="wrap">
+    <span class="sec-en">Curriculum</span>
+    <h2 class="sec-title">全4回のカリキュラム</h2>
+    <p class="flow">
+      <b>無料①</b> 単発→継続化 &nbsp;／&nbsp; <b>無料②</b> 売り込まないセールス（実施済）<br>
+      <span class="step">▼ ここから本講座 ▼</span><br>
+      自分の高単価・継続商品を「作って・価格をつけて・募集する」まで
+    </p>
+
+    <div class="lesson">
+      <div class="no"><span>第</span><strong>1</strong><span>回</span></div>
+      <div class="body">
+        <h3>才能・実績・お客様の変化を棚卸しする</h3>
+        <span class="goal">ゴール：<b>自分が売るべき継続テーマを1つ決める</b></span>
+      </div>
+    </div>
+
+    <div class="lesson">
+      <div class="no"><span>第</span><strong>2</strong><span>回</span></div>
+      <div class="body">
+        <h3>継続プログラムの中身を作る</h3>
+        <span class="goal">ゴール：<b>3ヶ月・6回などの商品骨子を作る</b></span>
+      </div>
+    </div>
+
+    <div class="lesson">
+      <div class="no"><span>第</span><strong>3</strong><span>回</span></div>
+      <div class="body">
+        <h3>価格とオファーを決める</h3>
+        <span class="goal">ゴール：<b>価格・特典・対象者・約束する変化を決める</b></span>
+      </div>
+    </div>
+
+    <div class="lesson">
+      <div class="no"><span>第</span><strong>4</strong><span>回</span></div>
+      <div class="body">
+        <h3>募集文と個別相談導線を作る</h3>
+        <span class="goal">ゴール：<b>告知文・個別相談案内・成約トークの型を完成</b></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICE -->
+<section class="price" id="price">
+  <div class="wrap">
+    <span class="sec-en">Special offer</span>
+    <h2 class="sec-title">参加費</h2>
+    <div class="price-card">
+      <span class="tag">ミラコレメンバー 8名限定</span>
+      <div class="name">HIRO ビジネスアカデミー（全4回）</div>
+      <div class="price-original">通常 198,000円</div>
+      <div class="price-now">
+        <span class="yen">¥</span><span class="num">88,000</span><span class="tax">（税込）</span>
+      </div>
+      <div class="price-note">＼ ミラコレメンバー限定 8名さま ／</div>
+      <ul class="price-incl">
+        <li>本講座 全4回</li>
+        <li>各回ワーク・テンプレート一式</li>
+        <li>自分の継続プログラム1本の完成サポート</li>
+        <li>募集文・個別相談導線・成約トークの型</li>
+      </ul>
+    </div>
+    <div style="margin-top:40px;">
+      <a href="#contact" class="btn">8名限定で申し込む</a>
+    </div>
+  </div>
+</section>
+
+<!-- TARGET -->
+<section class="target">
+  <div class="wrap">
+    <span class="sec-en">For you</span>
+    <h2 class="sec-title">こんな方におすすめです</h2>
+    <div class="target-grid">
+      <div class="item"><span>01</span>セッション・鑑定・ヒーリングを単発で提供している方</div>
+      <div class="item"><span>02</span>継続プログラム（高単価商品）を作りたい方</div>
+      <div class="item"><span>03</span>売り込まずに、紹介とリピートで選ばれたい方</div>
+      <div class="item"><span>04</span>自分の才能を、ちゃんと収入につなげたい方</div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="wrap">
+    <span class="sec-en">FAQ</span>
+    <h2 class="sec-title">よくあるご質問</h2>
+    <details>
+      <summary>これまでの無料講座に参加していなくても大丈夫ですか？</summary>
+      <p>はい、大丈夫です。第1回で才能・実績の棚卸しから始めるので、ここからのご参加でも自分の商品づくりに取り組めます。</p>
+    </details>
+    <details>
+      <summary>まだ売る商品が決まっていません。それでも参加できますか？</summary>
+      <p>むしろ最適です。本講座は「これから自分の継続商品を作る」ための4回です。テーマ決めからご一緒します。</p>
+    </details>
+    <details>
+      <summary>当日参加できない回があります。</summary>
+      <p>各回ワーク・テンプレートをご用意しています。お申し込み時にご相談ください。</p>
+    </details>
+    <details>
+      <summary>本当に8名限定ですか？</summary>
+      <p>はい。一人ひとりの商品づくりに伴走するため、ミラコレメンバー8名さま限定・先着順とさせていただきます。</p>
+    </details>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final" id="contact">
+  <div class="wrap">
+    <h2>あなたの才能を、<br>“選ばれ続ける商品”に変える4回へ。</h2>
+    <p>4回が終わるころ、あなたの手元には「自信を持って募集できる自分の商品」があります。</p>
+    <span class="seats">＼ ミラコレメンバー 8名限定・先着順 ／</span>
+    <a href="#" class="btn">参加を申し込む<small>※お申し込みフォームへ</small></a>
+  </div>
+</section>
+
+<footer>
+  <p>HIRO ビジネスアカデミー</p>
+  <p style="margin-top:8px;opacity:.6;">&copy; HIRO Business Academy. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
