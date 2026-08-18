@@ -4,6 +4,8 @@
 運営：株式会社ダイナビジョン（https://dynavision.co.jp/）／ミラクルコレクション（https://dynavision.co.jp/MiracleCollection/）
 作成日：2026-08-18
 
+> **追記（2026-08-18）**：ネオレムリア・ワールドは約2ヶ月後にオリジナル新サイト「スピナビ」へ移行し、立ち上げ次第解約・閉鎖する予定です。本ドキュメントの内容（悩み別診断、共通初回商品、露出設計、予約後フォロー、KPI等）はそのままスピナビの要件として引き継がれます。移行の設計・ロードマップは [spinavi-migration-and-design.md](./spinavi-migration-and-design.md) を参照してください。
+
 ---
 
 ## 0. 要約（3行で）
